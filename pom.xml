@@ -12,6 +12,7 @@
     <properties>
         <cxf.version>2.7.7</cxf.version>
         <hibernate.version>4.2.7.Final</hibernate.version>
+        <osgi.version>4.3.1</osgi.version>
     </properties>
 
     <modules>
@@ -66,18 +67,18 @@
         <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.core</artifactId>
-            <version>4.3.1</version>
+            <version>${osgi.version}</version>
             <scope>provided</scope>
         </dependency>
         
         <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.compendium</artifactId>
-            <version>4.3.1</version>
+            <version>${osgi.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
-    
+
     <build>
         <plugins>
             <plugin>
